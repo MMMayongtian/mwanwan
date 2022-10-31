@@ -1,65 +1,35 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="MMMayongtian">
-    <!-- 为页面添加图标 -->
-    <link rel="icon" href="images/my.jpg" type="image/x-icon">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <!-- 链接字体 -->
-    <title>My test page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <h1>My test demo</h1>
-    <img id="myImage" src="images/my.jpg" alt="My test image">
-    <p>At <strong>Mozilla</strong>, we're a <em>gloable</em> community of</p>
-    <p>Japanese example:<span lang="ja">ご飯が熱い。</span>.</p>
-    <ul>
-        <li>technologists</li>
-        <li>thinkers</li>
-        <li>builders</li>
-    </ul>
-    <ol>
-        <li id="myname">MyName:mmma </li>
-        <button id="rename">rename</button>
-        <li>MyAge:18</li>
-        <li>Click test: <button id="testclick">Click</button></li>
-    </ol>
-    <p>working together to keep the internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective
-        future.
-    </p>
-    <a href="index.html#myname">
-        <img width="20px" src="images/my.jpg" alt="链接至MMMa的GitHub">
-    </a>
-    <p><a target="_blank" title="MyGihub" href="https://github.com/MMMayongtian"> Connect Me </a>! </p>
-    <!-- 超文本引用 hypertext reference -->
-
-
-    <p><a href="https://www.example.com/large-report.pdf">
-        下载销售报告（PDF, 10MB）
-      </a></p>
-
-    <p><a href="https://www.example.com/video-stream/" target="_blank">
-        观看视频（将在新标签页中播放，HD 画质）
-      </a></p>
-
-    <p><a href="https://www.example.com/car-game">
-        进入汽车游戏（需要 Flash 插件）
-      </a></p>
-    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN" download="firefox-latest-64bit-installer.exe">
-     下载最新的 Firefox 中文版 - Windows（64位）
-   </a>
-
-
-    <input id="text_1" type="text">
-    <input id="text_2" type="text" disabled>
-    <button id="changeUser">切换用户</button>
-
-    <script src="scripts/main.js" defer></script>
-    <!-- defer 告诉浏览器在解析完成 HTML 后再加载 JavaScript 这样可以确保在加载脚本之前浏览器已经解析了所有的 HTML 内容 -->
+    <div class="card">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="./images/my.jpg">
+            </div>
+        </div>
+        <div class="content">
+            <a href="#github.com/MMMayongtian">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg></a>
+            <h3>Call-me-MMMa</h3>
+            <div class="textIcon">
+                <h4>Website Developer</h4>
+                <a href="#github.com/MMMayongtian"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
