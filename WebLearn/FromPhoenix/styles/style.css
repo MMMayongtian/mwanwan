@@ -6,20 +6,17 @@
     font-family: "Poppins", sans-serif;
 }
 
-
-/* body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: radial-gradient(#777, #222);
-} */
+}
 
 .card {
-    display: flex;
-    position: absolute;
-    top: 20%;
-    width: 360px;
+    position: relative;
+    width: 340px;
     height: 450px;
     background: #fff;
     border-radius: 10px;
@@ -56,7 +53,7 @@
     left: 50%;
     bottom: 0%;
     transform: translateX(-50%);
-    width: 360px;
+    width: 340px;
     height: 310px;
     background: #ff0;
 }

@@ -1,0 +1,79 @@
+:root {
+    --theme-1: #38393c;
+    --theme-2: #2f8fcf;
+    --theme-3: #2fcf51;
+    --theme-4: #f2e75e;
+    --theme-5: #e95181;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--theme-1);
+    transition: background-color 1s;
+    /* background: radial-gradient(#777, #222); */
+}
+
+.tab-bar {
+    background-color: white;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 15px;
+    position: relative;
+    gap: 25px;
+    box-shadow: 0 10px 40px -20px #000000;
+}
+
+.tab-bar_circle-indicator {
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--theme-1);
+    z-index: 0;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+.tab-bar_circle-indicator.animate {
+    animation: circleIndicatorAnimate 1s both;
+}
+
+.tab-bar_item {
+    width: 40px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+@keyframes circleIndicatorAnimate {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
