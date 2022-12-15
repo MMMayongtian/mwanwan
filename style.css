@@ -9,8 +9,8 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background-color: var(--theme-1);
     transition: background-color 1s;
     /* background: radial-gradient(#777, #222); */
@@ -18,7 +18,7 @@ body {
 
 .tab-bar {
     background-color: white;
-    top: 40%;
+    top: 38%;
     display: flex;
     justify-content: space-between;
     padding: 20px 30px;

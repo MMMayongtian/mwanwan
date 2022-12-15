@@ -24,5 +24,4 @@ function d(id) {
     document.getElementById("d4").style.display = "none"; //隐藏
     document.getElementById("d5").style.display = "none"; //隐藏
     document.getElementById(id).style.display = "block"; //隐藏
-
 }
